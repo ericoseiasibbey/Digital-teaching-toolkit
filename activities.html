@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Practical Activities</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+Digital Teaching Toolkit
+</div>
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="modules.html">Modules</a></li>
+
+<li><a href="activities.html">Activities</a></li>
+
+<li><a href="quiz.html">Quiz</a></li>
+
+<li><a href="resources.html">Resources</a></li>
+
+<li><a href="feedback.html">Feedback</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+
+<main class="container">
+
+<h1>Practical Activities</h1>
+
+<p>
+Apply what you have learned through practical classroom-based activities.
+</p>
+
+
+<!-- Activity 1 -->
+
+<section class="activity">
+
+<h2>Activity 1: Match the Tool to the Teaching Purpose</h2>
+
+<p>
+Which digital resource would you use to check learners' understanding
+after a lesson?
+</p>
+
+<select id="activity1">
+
+<option value="">-- Select an answer --</option>
+
+<option value="presentation">
+Digital presentation
+</option>
+
+<option value="quiz">
+Online quiz
+</option>
+
+<option value="image">
+Image
+</option>
+
+<option value="video">
+Video
+</option>
+
+</select>
+
+<button onclick="checkActivity1()">
+Check Answer
+</button>
+
+<p id="activity1-result"></p>
+
+</section>
+
+
+<!-- Activity 2 -->
+
+<section class="activity">
+
+<h2>Activity 2: Technology-Supported Lesson Activity</h2>
+
+<p>
+Design a simple technology-supported activity for a lesson you teach.
+</p>
+
+<label>Subject</label>
+
+<input type="text" id="subject">
+
+
+<label>Class</label>
+
+<input type="text" id="class">
+
+
+<label>Topic</label>
+
+<input type="text" id="topic">
+
+
+<label>Learning Objective</label>
+
+<textarea id="objective"></textarea>
+
+
+<label>Digital Tool/Resource</label>
+
+<input type="text" id="tool">
+
+
+<label>How will learners use the technology?</label>
+
+<textarea id="learnerActivity"></textarea>
+
+
+<button onclick="saveActivity()">
+Save Activity
+</button>
+
+<p id="save-result"></p>
+
+</section>
+
+
+<!-- Activity 3 -->
+
+<section class="activity">
+
+<h2>Activity 3: Safe or Unsafe?</h2>
+
+<p>
+
+A teacher receives an email from an unknown sender asking the teacher
+to enter their school password through a link.
+
+Is this safe or unsafe?
+
+</p>
+
+
+<button onclick="safetyAnswer('safe')">
+Safe
+</button>
+
+<button onclick="safetyAnswer('unsafe')">
+Unsafe
+</button>
+
+
+<p id="safety-result"></p>
+
+</section>
+
+</main>
+
+
+<footer>
+
+<p>
+© 2026 Digital Teaching Toolkit
+</p>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

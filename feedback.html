@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Course Feedback</title>
+
+<link rel="stylesheet"
+      href="css/style.css">
+
+</head>
+
+
+<body>
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+Digital Teaching Toolkit
+</div>
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="modules.html">Modules</a></li>
+
+<li><a href="activities.html">Activities</a></li>
+
+<li><a href="quiz.html">Quiz</a></li>
+
+<li><a href="resources.html">Resources</a></li>
+
+<li><a href="feedback.html">Feedback</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+
+<main class="container">
+
+<h1>Course Feedback</h1>
+
+<p>
+Thank you for completing the Digital Teaching Toolkit.
+Please help us improve the website.
+</p>
+
+
+<form onsubmit="submitFeedback(event)">
+
+<label>
+How easy was the website to navigate?
+</label>
+
+<select id="navigation">
+
+<option>Excellent</option>
+<option>Good</option>
+<option>Fair</option>
+<option>Poor</option>
+
+</select>
+
+
+<label>
+How useful were the learning modules?
+</label>
+
+<select id="usefulness">
+
+<option>Very Useful</option>
+<option>Useful</option>
+<option>Somewhat Useful</option>
+<option>Not Useful</option>
+
+</select>
+
+
+<label>
+What is the most important thing you learned?
+</label>
+
+<textarea id="learning"></textarea>
+
+
+<label>
+Which activity did you find most useful?
+</label>
+
+<textarea id="activity"></textarea>
+
+
+<label>
+What challenge did you experience?
+</label>
+
+<textarea id="challenge"></textarea>
+
+
+<label>
+What topic would you like us to add?
+</label>
+
+<textarea id="suggestion"></textarea>
+
+
+<button type="submit">
+Submit Feedback
+</button>
+
+</form>
+
+
+<p id="feedback-result"></p>
+
+</main>
+
+
+<footer>
+
+<p>
+© 2026 Digital Teaching Toolkit
+</p>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
